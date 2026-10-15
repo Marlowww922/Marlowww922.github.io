@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrTimbitt | Crystal PvP Content</title>
+    <style>
+        body {
+            background-color: #0b0713;
+            color: #e2dbf0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(rgba(11, 7, 19, 0.85), rgba(11, 7, 19, 0.95)), 
+                              url('https://unsplash.com');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 40px;
+            background: rgba(22, 14, 38, 0.75);
+            border: 2px solid #a855f7;
+            border-radius: 16px;
+            box-shadow: 0 0 30px rgba(168, 85, 247, 0.4);
+            backdrop-filter: blur(8px);
+        }
+        h1 {
+            color: #d8b4fe;
+            font-size: 2.8rem;
+            margin-bottom: 5px;
+            text-shadow: 0 0 10px rgba(216, 180, 254, 0.6);
+        }
+        .subtitle {
+            color: #a855f7;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #cbd5e1;
+        }
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 35px 0;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-youtube {
+            background-color: #ff0000;
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+        }
+        .btn-youtube:hover {
+            background-color: #cc0000;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
+        }
+        .btn-download {
+            background-color: #a855f7;
+            color: white;
+            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+        }
+        .btn-download:hover {
+            background-color: #9333ea;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(168, 85, 247, 0.5);
+        }
+        .btn-info {
+            background-color: #1e1b4b;
+            color: #d8b4fe;
+            border: 2px solid #a855f7;
+            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.1);
+        }
+        .btn-info:hover {
+            background-color: #2e1065;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(168, 85, 247, 0.3);
+        }
+        .features {
+            margin-top: 40px;
+            text-align: left;
+            background: rgba(11, 7, 19, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #a855f7;
+        }
+        .features h3 {
+            margin-top: 0;
+            color: #d8b4fe;
+        }
+        ul {
+            padding-left: 20px;
+            color: #94a3b8;
+        }
+        li {
+            margin: 8px 0;
+        }
+
+        /* Pop-up Overlay Box Content Styling */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-box {
+            background: #160e26;
+            border: 2px solid #a855f7;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            text-align: left;
+            box-shadow: 0 0 25px rgba(168, 85, 247, 0.5);
+            position: relative;
+        }
+        .modal-box h2 {
+            margin-top: 0;
+            color: #d8b4fe;
+            font-size: 1.5rem;
+        }
+        .modal-box p {
+            color: #e2dbf0;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 3px solid #d8b4fe;
+        }
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            color: #a855f7;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close-btn:hover {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>DrTimbitt</h1>
+        <div class="subtitle">MINECRAFT CRYSTAL PVP</div>
+        
+        <p>Welcome to the official hub. Explore high-tier combat mechanics, optimization configurations, and the official Marlowww CPVP pack ! built to master Minecraft's intense vanilla Crystal PvP metagame.</p>
+        
+        <div class="button-group">
+            <!-- YouTube Channel Link -->
+            <a href="https://youtube.com" target="_blank" class="btn btn-youtube">
+                🔴 Visit YouTube Channel
+            </a>
+            
+            <!-- Direct ZIP Download Link -->
+            <a href="https://github.com" class="btn btn-download">
+                ⚡ Download Marlowww CPVP pack !
+            </a>
+
+            <!-- Pop-up Window Trigger -->
+            <button class="btn btn-info" onclick="openModal()">
+                ℹ️ How to Find Pack
+            </button>
+        </div>
+
+        <div class="features">
+            <h3>Configuration & Essentials</h3>
+            <ul>
+                <li>Optimized crystal visual tracking frameworks.</li>
+                <li>Customized user combat sound dampening.</li>
+                <li>Performance-tuned settings for smooth gameplay layouts.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Instructions Popup -->
+    <div class="modal-overlay" id="infoModal" onclick="closeModal(event)">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="toggleModal(false)">&times;</button>
+            <h2>Pack Lookup Instructions</h2>
+            <p>In github search <strong>marlowww Minecraft</strong> and see the second one by <strong>Marlowww922</strong> ok!</p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('infoModal');
+        
+        function openModal() {
+            modal.style.display = 'flex';
+        }
+        
+        function toggleModal(show) {
+            modal.style.display = show ? 'flex' : 'none';
+        }
+
+        function closeModal(event) {
+            if (event.target === modal) {
+                toggleModal(false);
+            }
+        }
+    </script>
+
+</body>
+</html>
